@@ -1,422 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titanium - Home </title>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- boxicons -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- app css -->
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/app.css">
+    <title>Titanium Website - Home</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">titanium</a>
+            <div class="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#product">Product</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            <div class="navbar-extra">
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+    </nav>
+    <!-- Navbar End -->
 
-    <!-- header -->
-    <header>
-        <!-- mobile menu -->
-        <div class="mobile-menu bg-second">
-            <a href="#" class="mb-logo">Titanium</a>
-            <span class="mb-menu-toggle" id="mb-menu-toggle">
-                <i class='bx bx-menu'></i>
-            </span>
-        </div>
-        <!-- end mobile menu -->
-        <!-- main header -->
-        <div class="header-wrapper" id="header-wrapper">
-            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
-                <i class='bx bx-x'></i>
-            </span>
-            <!-- mid header -->
-            <div id="home" class="bg-main">
-                <div class="mid-header container">
-                    <a href="#" class="logo">Titanium</a>
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                        <i class='bx bx-search-alt'></i>
-                    </div>
-                    <ul class="user-menu">
-                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
-                        <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
-                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- end mid header -->
-            <!-- bottom header -->
-            <div class="bg-second">
-                <div class="bottom-header container">
-                    <ul class="main-menu">
-                        <li><a href="#home">home</a></li>
-                        <!-- mega menu -->
-                        <li class="mega-dropdown">
-                            <a href="#">Shop<i class='bx bxs-chevron-down'></i></a>
-                            <div class="mega-content">
-                                <div class="row">
-                                    <div class="col-3 col-md-12">
-                                        <div class="box">
-                                            <h3>Categories</h3>
-                                            <ul>
-                                                <li><a href="#newarrivals">New Arrivals</a></li>
-                                                <li><a href="#specialproduct">Special Product</a></li>
-                                                <li><a href="#bestseller">Best Seller</a></li>
-                                                <li><a href="#discounts">Discounts</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row img-row">
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/1.jfif" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/2.jfif" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/3.jfif" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="box">
-                                            <img src="./images/4.jfif" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- end mega menu -->
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- end bottom header -->
-        </div>
-        <!-- end main header -->
-    </header>
-    <!-- end header -->
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Dress Classy <span>
+            <p>Dress like you're already famous, A classic never goes out of style, Keep calm & stay classy, Dress how you want to be add.</p>
+            <a href="#" class="cta">Shop Now</a>
+        </main>
+    </section>
+    <!-- Hero Section End -->
 
-    <!-- hero section -->
-    <div class="hero">
-        <div class="slider">
-            <div class="container">
-                <!-- slide item -->
-                <div class="slide active">
-                    <div class="info">
-                        <div class="info-content">
-                            <h3 class="top-down">
-                                Titanium's Collection
-                            </h3>
-                            <h2 class="top-down trans-delay-0-2">
-                                New Arrivals
-                            </h2>
-                            <div class="top-down trans-delay-0-6">
-                                <button class="btn-flat btn-hover">
-                                    <span>shop now</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img top-down">
-                        <img src="./images/slide 1.png" alt="">
-                    </div>
-                </div>
-                <!-- end slide item -->
-                <!-- slide item -->
-                <div class="slide">
-                    <div class="info">
-                        <div class="info-content">
-                            <h3 class="top-down">
-                                Titanium's Collection
-                            </h3>
-                            <h2 class="top-down trans-delay-0-2">
-                                Best Sellers
-                            </h2>
-                            <div class="top-down trans-delay-0-6">
-                                <button class="btn-flat btn-hover">
-                                    <span>shop now</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img right-left">
-                        <img src="./images/slide 4.png" alt="">
-                    </div>
-                </div>
-                <!-- end slide item -->
-                <!-- slide item -->
-                <div class="slide">
-                    <div class="info">
-                        <div class="info-content">
-                            <h3 class="top-down">
-                                Titanium's Collection
-                            </h3>
-                            <h2 class="top-down trans-delay-0-2">
-                                Discounts
-                            </h2>
-                            <div class="top-down trans-delay-0-6">
-                                <button class="btn-flat btn-hover">
-                                    <span>shop now</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img left-right">
-                        <img src="./images/1.3.png" alt="">
-                    </div>
-                </div>
-                <!-- end slide item -->
-            </div>
-            <!-- slider controller -->
-            <button class="slide-controll slide-next">
-                <i class='bx bxs-chevron-right'></i>
-            </button>
-            <button class="slide-controll slide-prev">
-                <i class='bx bxs-chevron-left'></i>
-            </button>
-            <!-- end slider controller -->
-        </div>
-    </div>
-    <!-- end hero section -->
-
-    <!-- product list -->
-    <div id="newarrivals" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>New Arrivals</h2>
-            </div>
-            <div class="row" id="latest-products">
-                <div class="col-3 col-md-6 col-sm-12">
-                    <div class="product-card">
-                        <div class="product-card-img">
-                            <img src="./images/gambar 1.jfif" alt="">
-                            <img src="./images/gambar 1.1.png" alt="">
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-btn">
-                                <button class="btn-flat btn-hover btn-shop-now">shop now</button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-cart-add'></i>
-                                </button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-heart'></i>
-                                </button>
-                            </div>
-                            <div class="product-card-name">
-                                Azalea
-                            </div>
-                            <div class="product-card-price">
-                                <span><del>Rp519.000,00</del></span>
-                                <span class="curr-price">Rp399.000,00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-footer">
-                <a class="btn-flat btn-hover">view all</a>
-            </div>
-        </div>
-    </div>
-    <!-- end product list -->
-
-    <!-- special product -->
-    <div id="specialproduct" class="bg-second">
-        <div class="section container">
+        <!-- About Section start -->
+        <section id="about" class="about">
+            <h2>Tentang Kami</h2>
+            
             <div class="row">
-                <div class="col-4 col-md-4">
-                    <div class="sp-item-img">
-                        <img src="./images/1.2.png" alt="">
-                    </div>
+                <div class="about-img">
+                    <img src="images/about us.png" alt="Tentang Kami">
                 </div>
-                <div class="col-7 col-md-8">
-                    <div class="sp-item-info">
-                        <div class="sp-item-name"> Asclepias</div>
-                        <p class="sp-item-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos itaque et eaque quod harum vero autem? Reprehenderit enim non voluptate! Qui provident modi est non eius ratione, debitis iure.
-                        </p>
-                        <button class="btn-flat btn-hover">shop now</button>
-                    </div>
+                <div class="content">
+                   <h3>Kenapa harus titanium?</h3>
+                   <p>titanium sudah banyak digunakan oleh wanita Indonesia karena design dari titanium ini sangat elegan ketika dipakai, bahannya berkualitas dan limited edition</p>
+                   <p>dengan memakai titanium bukan hanya bisa membuat penampilan berbeda, tapi meningkatkan kepercayaan diri</p>
                 </div>
             </div>
+        </section>
+        <!-- About Section end -->
+
+        <!-- Product Section start -->
+    <section id="product" class="product">
+        <h2>Produk Kami</h2>
+        <p>titanium menyediakan beberapa koleksi fashion yang bisa kalian checkout sekarang juga</p>
+        <div class="row">
+            <div class="product-card">
+                <img src="images/product/1.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Azalea</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>
+            <div class="product-card">
+                <img src="images/product/2.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Garbera</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>            
+            <div class="product-card">
+                <img src="images/product/3.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Daffodils</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>            
+            <div class="product-card">
+                <img src="images/product/4.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Mandevilla</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>            
+            <div class="product-card">
+                <img src="images/product/5.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Ipamoea</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>            
+            <div class="product-card">
+                <img src="images/product/6.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Lunaria</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>         
+            <div class="product-card">
+                <img src="images/product/7.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Edelweis</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div> 
+            <div class="product-card">
+                <img src="images/product/8.jpg" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Freesia</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>   
+            <div class="product-card">
+                <img src="images/product/gambar 4.1.jfif" alt="Home Cleaning" class="product-card-title">
+                <h3 class="product-card-title">Primrose</h3>
+                <p class="menu-card-price">Rp 499.000</p>
+            </div>  
         </div>
-    </div>
-    <!-- end special product -->
 
-    <!-- product list -->
-    <div id="bestseller" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Best Sellers</h2>
-            </div>
-            <div class="row" id="best-products">
-                <div class="col-3 col-md-6 col-sm-12">
-                    <div class="product-card">
-                        <div class="product-card-img">
-                            <img src="./images/gambar 1.jfif" alt="">
-                            <img src="./images/gambar 1.1.png" alt="">
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-btn">
-                                <button class="btn-flat btn-hover btn-shop-now">shop now</button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-cart-add'></i>
-                                </button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-heart'></i>
-                                </button>
-                            </div>
-                            <div class="product-card-name">
-                                Azalea
-                            </div>
-                            <div class="product-card-price">
-                                <span><del>Rp519.000,00</del></span>
-                                <span class="curr-price">Rp399.000,00</span>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Contact Section start -->
+    
+    <section id="contact" class="contact">
+        <h2>Keep In Touch</h2>
+    
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.014057090637!2d107.59392711414452!3d-6.888919069324126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6603f5b8f93%3A0x65b023128ec2b79a!2sParis%20Van%20Java%2C%20Jl.%20Sukajadi%20No.131-139%2C%20Cipedes%2C%20Kec.%20Sukajadi%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040162!5e0!3m2!1sid!2sid!4v1677861395234!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <form action="">
+                <div class="input-group ">
+                    <i data-feather="user"></i>
+                    <input type="text"
+                    placeholder="Nama">
                 </div>
-            </div>
-            <div class="section-footer">
-                <a class="btn-flat btn-hover">view all</a>
-            </div>
+                <div class="input-group ">
+                    <i data-feather="mail"></i>
+                    <input type="text"
+                    placeholder="Email">
+                </div>
+                <div class="input-group ">
+                    <i data-feather="phone"></i>
+                    <input type="text"
+                    placeholder="No hp">
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
         </div>
-    </div>
-    <!-- end product list -->
+    </section>
+    <!-- Contact Section end -->
 
-     <!-- product list -->
-     <div id="discounts" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Discounts</h2>
+    <!-- Footer start -->
+        <footer>
+            <div class="socials">
+                <a href="#"><i data-feather="instagram"></i></a>
+                <a href="#"><i data-feather="twitter"></i></a>
+                <a href="#"><i data-feather="facebook"></i></a>
             </div>
-            <div class="row" id="discount-products">
-                <div class="col-3 col-md-6 col-sm-12">
-                    <div class="product-card">
-                        <div class="product-card-img">
-                            <img src="./images/gambar 1.jfif" alt="">
-                            <img src="./images/gambar 1.1.png" alt="">
-                        </div>
-                        <div class="product-card-info">
-                            <div class="product-btn">
-                                <button class="btn-flat btn-hover btn-shop-now">shop now</button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-cart-add'></i>
-                                </button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-heart'></i>
-                                </button>
-                            </div>
-                            <div class="product-card-name">
-                                Azalea
-                            </div>
-                            <div class="product-card-price">
-                                <span><del>Rp519.000,00</del></span>
-                                <span class="curr-price">Rp399.000,00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    
+            <div class="links">
+                <a href="home">Home</a>
+                <a href="about">Tentang Kami</a>
+                <a href="layanan">Layanan</a>
+                <a href="contact">Kontak</a>
             </div>
-            <div class="section-footer">
-                <a class="btn-flat btn-hover">view all</a>
+    
+            <div class="credit">
+                <p>Created by <a href="">titarisma</a> | &copy; 2023.</p>
             </div>
-        </div>
-    </div>
-    <!-- end product list -->
+        </footer>
+    <!-- Footer end -->
+        
+    </section>
+    <!-- Product Section end -->
 
-
-<!-- ======= Contact Section ======= -->
-<div id="contact" class="contact-section">
-
-    <h1>Contact Us</h1>
-    <form class="contact-form" action="index.html" method="post">
-      <input type="text" class="contact-form-text" placeholder="Your name">
-      <input type="email" class="contact-form-text" placeholder="Your email">
-      <input type="text" class="contact-form-text" placeholder="Your phone">
-      <textarea class="contact-form-text" placeholder="Your message"></textarea>
-      <input type="submit" class="contact-form-btn" value="Send">
-    </form>
-  </div>
-
-<!-- End Contact Section -->
-
-</main><!-- End #main -->
-
-    <!-- footer -->
-    <footer class="bg-second">
-        <div class="container">
-            <div class="row">
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">Products</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">services</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6">
-                    <h3 class="footer-head">support</h3>
-                    <ul class="menu">
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">product help</a></li>
-                        <li><a href="#">order status</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-6 col-sm-12">
-                    <div class="contact">
-                        <h3 class="contact-header">
-                            Titanium
-                        </h3>
-                        <ul class="contact-socials">
-                            <li><a href="#">
-                                    <i class='bx bxl-facebook-circle'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-instagram-alt'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-youtube'></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class='bx bxl-twitter'></i>
-                                </a></li>
-                        </ul>
-                    </div>
-                    <div class="subscribe">
-                        <input type="email" placeholder="ENTER YOUR EMAIL">
-                        <button>subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer -->
-
-    <!-- app js -->
-    <script src="./js/app.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace()
+    </script>
+    
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>
